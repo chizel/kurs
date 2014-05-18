@@ -8,14 +8,12 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 
     <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -24,10 +22,11 @@
     </head>
 
     <body>
+
  <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery('#start_work').click(function(){
-        $(".content").load("hist.html");
+        $(".content").load("begin.html");
         }) 
 
         jQuery('#50_60').click(function(){
@@ -46,38 +45,42 @@
         $(".content").load("90.html");
         }) 
 
+        jQuery('#tests').click(function(){
+        $(".content").load("tests.html");
+        }) 
+
+        jQuery('#sources').click(function(){
+        $(".content").load("sources.html");
+        }) 
+
     });
  </script>  
  <div class="container" style="font-size:21px;text-align:justify;line-height:1.5">
 <!-- HEAD -->
-<div class="navbar">
-<div class="navbar-inner">
-<div class="container">
+<div class="navbar navbar-inner">
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 <ul class="nav navbar-nav">
-  <!--<li><a href="/" class="navbar-brand"> <img src="" height="35px"></a></li>-->
-  <li class="active"><a href="/">Home</a></li>
-  <li><a href="#">link</a></li>
-  <li><a href="#">link</a></li>
-    <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li><a href="#" id="start_work">Початок діяльності</a></li>
-        <li><a href="#" id="50_60">1950-1960-ті роки</a></li>
-        <li><a href="#" id="70">1970-ті роки</a></li>
-        <li><a href="#" id="80">1980-ті роки</a></li>
-        <li><a href="#" id="90">1990-ті роки</a></li>
-    </ul>
-    </li> <li><a href="">Login</a></li>
+  <li><a href="/" class="navbar-brand"> <img src="img/azlk_logo.jpg" height="30px"></a></li>
+  <li class="active"><a href="index.html">Інфо</a></li>
+  <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Історія заводу АЗЛК<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#" id="start_work">Початок діяльності</a></li>
+            <li><a href="#" id="50_60">1950-1960-ті роки</a></li>
+            <li><a href="#" id="70">1970-ті роки</a></li>
+            <li><a href="#" id="80">1980-ті роки</a></li>
+            <li><a href="#" id="90">1990-ті роки</a></li>
+        </ul>
+  </li>
+    <li><a href="#" id="tests">Тести</a></li>
+    <li><a href="#" id="sources">Джерела</a></li>
 </ul>
 </nav>
-</div>
-</div>
 </div>
 <!-- END_HEAD -->
 
 </script>
-<div class="content" id="zam">
+<div class="content">
 Історія заводу АЗЛК.
 ВАТ «Москвич» — московський автомобільний завод. Розташований на території Південно-східного адміністративного округу Москви.
 
