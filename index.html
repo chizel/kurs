@@ -18,7 +18,7 @@
     <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css" />
-    <title></title>
+    <title>Історія заводу АЗЛК</title>
     </head>
 
     <body>
@@ -53,6 +53,10 @@
         $(".content").load("sources.html");
         }) 
 
+        jQuery('#sources').click(function(){
+        $(".content").load("instruction.html");
+        }) 
+
     });
  </script>  
  <div class="container" style="font-size:21px;text-align:justify;line-height:1.5">
@@ -74,6 +78,7 @@
   </li>
     <li><a href="#" id="tests">Тести</a></li>
     <li><a href="#" id="sources">Джерела</a></li>
+    <li><a href="#" id="instruction">Інструкція</a></li>
 </ul>
 </nav>
 </div>
